@@ -1,0 +1,36 @@
+<div class="section home-sc">
+  <app-home-slider></app-home-slider>
+</div>
+<div class="section" *ngIf="services">
+  <!-- <h2>
+    Business Units
+  </h2> -->
+  <app-business-units [hideBanner]="hideBanner"></app-business-units>
+  <!-- <div class="cards">
+    <app-card *ngFor="let item of services" [item]="item"></app-card>
+
+  </div> -->
+</div>
+
+
+
+<div class="section about">
+  <h2>
+    About Us
+  </h2>
+
+  <p>
+    A 135% Contributor to B-BBEE
+    HISTORY
+    Siphephile Scaffolding Solutions was established in 27 May 2015, with a well experienced staff within scaffolding
+    and construction sector. Siphephile Scaffolding Solutions (Pty) Ltd was established by two individuals Mthobisi
+    Maphumulo and Mlungisi Nicholas Kheswa. Siphephile Scaffolding Solutions (Pty) Ltd is a turnkey scaffolding and
+    access solution company – specialising in the erection, modification and dismantling of access scaffolding to the
+    entire major construction, mining and media companies here in South-Africa.
+  </p>
+  <br>
+  <div class="action">
+    <a routerLink="/about-us"><button>Learn more</button></a>
+
+  </div>
+</div>

@@ -1,0 +1,58 @@
+<app-banner-widget *ngIf="!hideBanner" [heading]="'Our services'"></app-banner-widget>
+
+<div class="units">
+  <div class="unit" *ngFor="let item of businessUnits; let i = index" [ngClass]="item.Class">
+    <span *ngIf="(i+1) % 2 == 0">
+      <div class="img">
+        <img [src]="item.Image" alt="">
+      </div>
+      <div class="details">
+
+        <h3>
+          <!-- <span>{{i+1}}. </span>  -->
+          {{item.Name}}
+        </h3>
+
+        <!-- <p>
+          {{item.Intro}}
+        </p> -->
+
+        <div [innerHtml]="item.Intro">
+
+        </div>
+        <!-- <button (click)="view(item)">Learn more</button> -->
+
+
+      </div>
+
+
+    </span>
+    <span *ngIf="(i+1) % 2 != 0">
+      <div class="details">
+        <h3>
+          <!-- <span>{{i+1}}. </span>  -->
+          {{item.Name}}
+        </h3>
+<!-- 
+        <p>
+          {{item.Intro}}
+        </p> -->
+        <div [innerHtml]="item.Intro">
+
+        </div>
+        <!-- <button  (click)="view(item)">Learn more</button> -->
+
+
+      </div>
+
+      <div class="img">
+        <img [src]="item.Image" alt="">
+      </div>
+    </span>
+
+  </div>
+
+</div>
+
+
+

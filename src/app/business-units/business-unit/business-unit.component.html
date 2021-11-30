@@ -1,0 +1,29 @@
+<div class="holder" *ngIf="businessUnit" [ngClass]="businessUnit.Class">
+
+  <div class="page-banner">
+    <div class="col">
+
+
+      <!-- <p>
+        {{businessUnit.Intro}}
+      </p> -->
+
+      <div class="">
+        <h1>
+          {{businessUnit.Name}}
+        </h1>
+        <div [innerHtml]="businessUnit.Intro"></div>
+      </div>
+
+
+
+      <div class="img">
+        <img [src]="businessUnit.Image" alt="">
+      </div>
+
+
+    </div>
+  </div>
+
+
+

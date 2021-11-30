@@ -1,0 +1,27 @@
+@import '../../assets/styles/colors.scss';
+
+.about {
+  text-align: left;
+}
+
+ul {
+  li {
+    padding: 1em;
+  }
+}
+
+h3 {
+  padding: 1em 0;
+  text-align: left;
+  font-weight: 900;
+}
+
+.s1 {
+  color: $primary;
+  font-weight: 600;
+}
+
+.s2 {
+  color: rgb(55, 204, 18);
+  font-weight: 600;
+}

@@ -1,0 +1,50 @@
+<app-banner-widget [heading]="' Contact us'"></app-banner-widget>
+
+<div class="section about">
+
+  <p>
+    Mr. Mthobisi Maphumulo <b>Managing Director </b>
+    <br>
+    <a href="tel:084 275 4431">084 275 4431</a>
+    <br>
+   <a href="mailto: mthobisi@siphephilesolutions.co.za"> mthobisi@siphephilesolutions.co.za</a>
+    <br>
+
+  </p>
+  <p>
+    Mr. Mlungisi  Kheswa <b>Operations Director</b><br>
+<a href="tel:076 511 9221">076 511 9221</a>
+   <br>
+  <a href="mailto: mlungisi@siphephilesolutions.co.za"> mlungisi@siphephilesolutions.co.za</a>
+   <br>
+  </p>
+  <div class="form-item">
+    <label for="">Your Name*</label>
+    <input type="text" [(ngModel)]="name" >
+  </div>
+
+  <div class="form-item">
+    <label for="">Your Email Address*</label>
+    <input type="email" [(ngModel)]="email" >
+  </div>
+
+  <div class="form-item">
+    <label for="">Your Contact Number*</label>
+    <input type="tel" [(ngModel)]="phone" >
+  </div>
+
+  <div class="form-item">
+    <label for="">Your Message*</label>
+    <textarea name="" [(ngModel)]="message"></textarea>
+  </div>
+
+
+  <br>
+  <div class="action">
+    <button (click)="sendEmail()">Send message</button>
+  </div>
+
+  <h3 style="color: rgb(95, 233, 53); padding: 2em;" *ngIf="sent">
+    {{sent}}
+  </h3>
+</div>
